@@ -1,0 +1,15 @@
+.container {
+  padding: 1rem;
+  background-color: rgb(63, 59, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container a {
+  color: white;
+}

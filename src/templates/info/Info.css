@@ -1,0 +1,110 @@
+.info-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-container h2 {
+  font-size: 1.8rem;
+  color: #1e1e2f;
+  margin-bottom: 15px;
+}
+
+.info-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.info-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.info-container ul li {
+  margin: 5px 0;
+}
+
+.info-container ul a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.info-container ul a:hover {
+  color: #0056b3;
+}
+
+.info-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.info-container table caption {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-container table th,
+.info-container table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.info-container table th {
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.info-container table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.info-container table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    padding: 15px;
+  }
+
+  .info-container h1 {
+    font-size: 2rem;
+  }
+
+  .info-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-container table th,
+  .info-container table td {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
