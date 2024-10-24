@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./Countries.css"
+
 import axiosInstance from '../../axios/axiosInstance';
 
 const Countries = () => {
@@ -9,7 +10,7 @@ const Countries = () => {
 
     useEffect(() => {
         async function search() {
-            const findCountries = await axios.get('http://localhost:3000/countries');
+            const findCountries = await axiosInstance.get('/countries');
             setCountries(findCountries.data);
         }
         search()

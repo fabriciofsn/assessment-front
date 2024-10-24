@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import "./Info.css";
-// import axiosInstance from './axiosInstance';
+import axiosInstance from '../../axios/axiosInstance';
 
 const Info = () => {
   const { countryCode } = useParams();
@@ -10,7 +10,7 @@ const Info = () => {
 
   useEffect(() => {
     async function search() {
-      const findCountries = await axios.get(`http://localhost:3000/countries/${countryCode}`);
+      const findCountries = await axiosInstance.get(`/countries/${countryCode}`);
 
       setCountries(findCountries.data);
     }
