@@ -39,8 +39,8 @@ const Info = () => {
         <caption>Population Over the Years</caption>
         <thead>
           <tr>
-            <th scope="col">Ano</th>
-            <th scope="col">População</th>
+            <th scope="col">Year</th>
+            <th scope="col">Population</th>
           </tr>
         </thead>
         <tbody>
